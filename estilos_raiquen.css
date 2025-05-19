@@ -53,7 +53,7 @@
       width: 100%;
       height: 100%; /* que llene el contenedor */
       object-fit: cover; /* mantiene la proporción */
-      object-position: center 30%; /* 🔥 mueve el recorte hacia abajo */
+      object-position: center 30%; /* mueve el recorte hacia abajo */
       display: block;
     } 
   
@@ -94,6 +94,15 @@
       align-items: center;
       gap: 10px; 
       
+  }
+
+  .footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: white;
   }
   
   /* ==========================================================================
@@ -367,22 +376,169 @@
 
 
   /* ==========================================================================
-     Grid
-     ========================================================================== */
-  
-  
-  /* ==========================================================================
-     Flexbox
-     ========================================================================== */
-  
-  
-  /* ==========================================================================
-     Media Queries pantallas pequeñas (celulares, tabletas)
-     ========================================================================== */
-  
- 
-  /* ==========================================================================
-     Estilos de impresión
-     ========================================================================== */
-  
- 
+   Estilos de formulario 
+   ========================================================================== */
+
+  .formulario {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.formulario h2 {
+  font-size: 22px;
+  color: #0d1b2a; /* Azul oscuro institucional */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #222;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.formulario button {
+  width: 100%;
+  background-color: #800020; /* Burdeos */
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.formulario button:hover {
+  background-color: #66001a;
+}
+
+
+/* ==========================================================================
+   Estilos confirmación de solicitud 
+   ========================================================================== */
+
+.mensaje-confirmacion {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 160px 40px 60px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* blanco ligeramente transparente */
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: url('https://i.postimg.cc/g2H1SfVY/logo-raiquen.png');
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  background-size: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mensaje-confirmacion h2 {
+  margin-top: 120px;
+  font-size: 24px;
+  color: #007f3b; /* Verde institucional */
+}
+
+.mensaje-confirmacion p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.mensaje-confirmacion a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0055cc;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.mensaje-confirmacion a:hover {
+  background-color: #cfcfcf;
+}
+
+/* ==========================================================================
+   Estilos consulta de solicitud
+   ========================================================================== */
+
+.codigo_seguimiento {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px 40px 60px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.codigo_seguimiento .logo-consulta {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.codigo_seguimiento h2 {
+  color: #0d1b2a;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.codigo_seguimiento form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.codigo_seguimiento label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.codigo_seguimiento input[type="text"] {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.codigo_seguimiento button {
+  background-color: #80001a; /* tu rojo institucional */
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.codigo_seguimiento button:hover {
+  background-color: #a2001e;
+}
